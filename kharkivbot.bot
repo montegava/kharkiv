@@ -1,0 +1,52 @@
+{
+  "name": "kharkivbot",
+  "padlock": "P1b9Al+sI1kJTV+cOnIoiQ==!xtfkPUMXtH9wQjzXG45H/6Ns7AKwV6CBaBK4MY4eUlh8DMPx7rqrZgCaTS6Nn9VM",
+  "version": "2.0",
+  "services": [
+    {
+      "tenantId": "be933416-de1c-46f9-ac01-03c25608dcd4",
+      "subscriptionId": "171e0811-1895-447d-bfd0-aca9aab9fc0f",
+      "resourceGroup": "kharkiv",
+      "serviceName": "kharkivbot",
+      "type": "abs",
+      "name": "kharkivbot",
+      "id": "1"
+    },
+    {
+      "connectionString": "irU1nx6GnnAM0SDCd71+tA==!47/iac3ClO/1tLLXTjddbAcgCDbTCbpaXCS+Pciumx19QPw/asQDSX+STE2WlYfirKDY2gQDBD/xG2YW5gDJigEkXrrzK4WZyuvUxlJodDdwQ3NaCEBGgAZb/vnMz+yV410NmxFM6tLta91C5FkgtnsHtSiS8Jp3Z8u0+2COeY/93S6n6dbqQx5F/z0mO4aRI5XuWeRWVKm2DNBqBx30lg==",
+      "tenantId": "be933416-de1c-46f9-ac01-03c25608dcd4",
+      "subscriptionId": "171e0811-1895-447d-bfd0-aca9aab9fc0f",
+      "resourceGroup": "kharkiv",
+      "serviceName": "kharkivbot",
+      "type": "blob",
+      "id": "2"
+    },
+    {
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "type": "endpoint",
+      "name": "development",
+      "id": "3"
+    },
+    {
+      "appId": "951b5925-06f0-4bcf-8076-5a736d6b9fb0",
+      "appPassword": "6gC8zP1HhmJUR+Kwcl73/g==!F2xlxzNtz5O0I2D3CI2qsAa9HT+5CQhS8EBYQTbOpbk=",
+      "endpoint": "https://kharkivbot.azurewebsites.net/api/messages",
+      "type": "endpoint",
+      "name": "production",
+      "id": "4"
+    },
+    {
+      "instrumentationKey": "yxBa8KDwZyP3OSvgV/pbMg==!3wEnnSyWL3IjG2GAg1xkMvqq9GHQYFV2tHtCjSBZtBxFw7seM9PRtb/L1ULSvF9Y",
+      "applicationId": "eca646ec-54e5-4b66-b7a8-1829cbbfeaa4",
+      "apiKeys": {},
+      "tenantId": "be933416-de1c-46f9-ac01-03c25608dcd4",
+      "subscriptionId": "171e0811-1895-447d-bfd0-aca9aab9fc0f",
+      "resourceGroup": "kharkiv",
+      "serviceName": "kharkivbotkg6rdj",
+      "type": "appInsights",
+      "id": "5"
+    }
+  ]
+}
