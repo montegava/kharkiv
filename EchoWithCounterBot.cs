@@ -87,7 +87,9 @@ namespace Microsoft.BotBuilderSamples
 
                 var replymessage = turnContext.Activity.CreateReply();
 
-                replymessage.Text = "Please send your pickup location";
+                replymessage.Text = "";
+
+               
 
 
                 if (replymessage.ChannelId.Equals("telegram", StringComparison.InvariantCultureIgnoreCase))
@@ -99,14 +101,21 @@ namespace Microsoft.BotBuilderSamples
                             new KeyboardButton[]
                             {
 
-                                new KeyboardButton("Send Current Location"){
-                                                         RequestLocation = true,
+                                new KeyboardButton("Register"){
+                                                         
                                                          RequestContact = true,
                                                 }
                             }
 
                     };
-                    await Bot.SendTextMessageAsync(turnContext.Activity.From.Id, "Share Location", Telegram.Bot.Types.Enums.ParseMode.Default, false, false, 0, markup);
+                    await Bot.SendTextMessageAsync(turnContext.Activity.From.Id, $"Hello { replymessage.Recipient.Name}." +
+                        $"Click 'Register' to sign in :hammer_and_wrench: :tools:   :gear:" +
+    
+                        @"You can also put the [link URL][1] below the current paragraph
+like [this][2].
+
+   [1]: http://tortocake.com
+   [2]: http://google.com", Telegram.Bot.Types.Enums.ParseMode.Default, false, false, 0, markup);
 
                 }
 
